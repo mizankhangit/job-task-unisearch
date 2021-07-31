@@ -1,0 +1,142 @@
+/* ==============
+  General
+===================*/
+body {
+  background-repeat: repeat;
+  background: $bg-body;
+  font-family: $font-family;
+  color: $body-color;
+  font-size: $base-font;
+}
+
+@media (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+html {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: $font-family-secondary;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+svg {
+  max-width: 100%;
+}
+
+a {
+  color: $gray-600;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+//container
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1760px;
+  }
+}
+
+@media (min-width: 1660px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    max-width: 96%;
+  }
+}
+
+.container-alt {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: $width;
+  @media screen and (min-width: 1600px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+#wrapper {
+  height: $height;
+  overflow: hidden;
+  width: $width;
+}
+.full-width {
+  width: 100%;
+  overflow: hidden;
+}
+.text-left {
+  text-align: left;
+}
+.poster > div > div {
+  background: #fff !important;
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  padding: 10px !important;
+  line-height: 1 !important;
+  position: relative;
+  z-index: 100;
+}
+.poster > div > div:before {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.poster > div div svg {
+  font-size: 3rem;
+  color: #000;
+  margin-top: -9px;
+}
+.menu-c {
+  display: none;
+}
+
+.slick-dots li.slick-active {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}

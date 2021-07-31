@@ -1,0 +1,153 @@
+.nav-top {
+  background-color: #ebeef6;
+  font-size: 13px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .pipe {
+    display: block;
+    width: 1px;
+    background-color: #0f1041;
+    height: 20px;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: auto;
+    font-size: 11px;
+    color: #0f1041;
+
+    svg {
+      color: #f47f20;
+    }
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: -80px;
+
+    a {
+      padding: 12px;
+      color: #707070;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #f47f20;
+        background-color: #f5f7fd;
+      }
+    }
+  }
+
+  &-social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+  }
+}
+
+.nav-bottom {
+  background-color: #f1f5fd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &-brand {
+    max-width: 150px;
+    margin-right: auto;
+    margin-top: -4px;
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: -2px;
+  }
+
+  &-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: #0f1041;
+    display: inline-block;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid #f47f20;
+    }
+  }
+
+  &-actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 8px;
+
+    button {
+      padding: 8px;
+      background-color: #0f1545;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.3s;
+      cursor: pointer;
+      font-size: 11px;
+
+      &:hover {
+        background-color: #0c1135;
+      }
+    }
+  }
+
+  &-action {
+    position: relative;
+
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #f47f20;
+      margin-left: 6px;
+    }
+
+    .count {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -2px;
+      right: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #000;
+      color: #fff;
+      font-size: 8px;
+    }
+  }
+}
